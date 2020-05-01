@@ -27,6 +27,10 @@
 // }
 
 
+function parseBinaryDigit(digit){
+  return
+}
+
 $(document).ready(function(){
-  
+    parseBinaryDigit("1");
 });

@@ -1,5 +1,5 @@
 
-# _Pig Latin_
+# _binary-to-decimal_
 
 #### _This demonstrates knowledge of JavaScript._
 
@@ -9,20 +9,20 @@
 ## Description
 
 _A page demonstrates basic javascript and behavior driven development_
-_Page outputs pig latinized expressions based on user input_
+_Page converts an arbitrary base value into a decimal format_
 
 
 ## Spec
 | Spec                                                                 | input | output |
 |----------------------------------------------------------------------|-------|--------|
-| convert single digit of binary to decimal equivalent                 | 1     | 1      |
-| convert first place of binary sequence to a decimal equivalent       | 10    | 2      |
-| add first and second places of binary sequence to decimal equivalent | 11    | 3      |
-| add any arbitrary sequence into a decimal equivalent                 | 110   | 6      |
-| convert hexadecimal digit to binary equivalent                       | F     | 15     |
-| convert any arbitrary hex sequence into a decimal equivalent         | FF    | 255    |
-| convert any arbitrary base into a decimal                            | G     | 6      |
-| convert any arbitrary base sequence into a decimal equiv             | GG    | 288    |
+| convert single digit of binary to decimal equivalent                 | "1"     | 1      |
+| convert first place of binary sequence to a decimal equivalent       | "10"    | 2      |
+| add first and second places of binary sequence to decimal equivalent | "11"    | 3      |
+| add any arbitrary sequence into a decimal equivalent                 | "110"   | 6      |
+| convert hexadecimal digit to binary equivalent                       | "F"     | 15     |
+| convert any arbitrary hex sequence into a decimal equivalent         | "FF"    | 255    |
+| convert any arbitrary base into a decimal                            | "G"     | 6      |
+| convert any arbitrary base sequence into a decimal equiv             | "GG"    | 288    |
 
 
 
