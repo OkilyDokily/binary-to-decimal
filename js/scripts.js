@@ -28,9 +28,9 @@
 
 
 function parseBinaryDigit(digit){
-  return
+  return parseInt(digit)
 }
 
 $(document).ready(function(){
-    parseBinaryDigit("1");
+    console.log(parseBinaryDigit("1"));
 });
