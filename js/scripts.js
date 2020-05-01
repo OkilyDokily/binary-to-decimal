@@ -42,6 +42,12 @@ function addSecondAndFirstDecimal(binary){
   return highest + second;
 }
 
+function binaryToDecimal(binary){
+ return binary.split("").reverse().reduce(function(accumulator,digit,index){
+    return accumulator + (parseBinaryDigit(digit) * Math.pow(2,index));
+  },0);
+}
+
 $(document).ready(function(){
-    console.log(addSecondAndFirstDecimal("10"));
+    console.log(binaryToDecimal("11"));
 });
