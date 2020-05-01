@@ -32,11 +32,16 @@ function parseBinaryDigit(digit){
 }
 
 function convertHighestPlaceToDecimal(binary){
-  var highest = binary.split("")[0]
-
+  var highest = binary.split("")[0];
   return parseBinaryDigit(highest) * Math.pow(2,binary.length-1);
 }
 
+function addSecondAndFirstDecimal(binary){
+  var highest = convertHighestPlaceToDecimal(binary);
+  var second = parseBinaryDigit(binary.split("")[1]);
+  return highest + second;
+}
+
 $(document).ready(function(){
-    console.log(convertHighestPlaceToDecimal("10"));
+    console.log(addSecondAndFirstDecimal("10"));
 });
