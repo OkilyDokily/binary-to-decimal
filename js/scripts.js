@@ -31,6 +31,12 @@ function parseBinaryDigit(digit){
   return parseInt(digit)
 }
 
+function convertHighestPlaceToDecimal(binary){
+  var highest = binary.split("")[0]
+
+  return parseBinaryDigit(highest) * Math.pow(2,binary.length-1);
+}
+
 $(document).ready(function(){
-    console.log(parseBinaryDigit("1"));
+    console.log(convertHighestPlaceToDecimal("10"));
 });
