@@ -1,3 +1,4 @@
+//business logic
 function parseAny(digit){
   if(parseInt(digit)>=0){
     return parseInt(digit)
@@ -6,17 +7,12 @@ function parseAny(digit){
   return unicode - 55;
 }
 
-
 function binaryToDecimal(binary){
- return binary.split("").reverse().reduce(function(accumulator,digit,index){
-    return accumulator + (parseInt(digit) * Math.pow(2,index));
-  },0);
+  return anyBaseToDecimal(binary, 2)
 }
 
  function hexadecimalToDecimal(hexadecimal){
-  return hexadecimal.split("").reverse().reduce(function (accumulator,digit,index){
-     return accumulator + (parseAny(digit) * Math.pow(16, index));
-   },0);
+  return anyBaseToDecimal(hexadecimal,16)
 }
 
 function anyBaseToDecimal(anybase,base){
@@ -27,5 +23,5 @@ function anyBaseToDecimal(anybase,base){
 
 
 $(document).ready(function(){
-    console.log(binaryToDecimal("11"));
+    
 });
