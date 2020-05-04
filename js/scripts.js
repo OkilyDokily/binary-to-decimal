@@ -56,6 +56,12 @@ function binaryToDecimal(binary){
   },0);
 }
 
+ function hexadecimalToDecimal(hexadecimal){
+  return hexadecimal.split("").reverse().reduce(function (accumulator,digit,index){
+     return accumulator + (parseHexadecimalDigit(digit) * Math.pow(16, index));
+   },0);
+}
+
 $(document).ready(function(){
     console.log(binaryToDecimal("11"));
 });
