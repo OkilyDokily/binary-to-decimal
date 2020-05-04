@@ -62,7 +62,11 @@ function binaryToDecimal(binary){
    },0);
 }
 
-
+function anyBaseToDecimal(anybase,base){
+ return anybase.split("").reverse().reduce(function (accumulator,digit,index){
+     return accumulator + (parseAny(digit) * Math.pow(base, index));
+   },0);
+ }
 
 
 $(document).ready(function(){
