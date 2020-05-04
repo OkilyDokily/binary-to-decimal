@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/scripts.js"></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="row">
+      <form id="binaryform">
+        <label for="binary">Enter binary</label>
+        <input type="text" id="binary">
+        <label id="binaryresult"> </label>
+        <button class="btn">Go!</button>
+      </form>
+      <form id="hexadecimalform">
+        <label for="hexadecimal">Enter hexadecimal</label>
+        <input type="text" id="hexadecimal">
+        <label id="hexadecimalresult"> </label>
+        <button class="btn">Go!</button>
+      </form>
+      <form id="anybaseform">
+        <label for="anybase">Enter a value and a base to convert to decimal</label>
+        <input type="text" id="anybase">
+        <label id="anybaseresult"> </label>
+        <button class="btn">Go!</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
