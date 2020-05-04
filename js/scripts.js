@@ -7,14 +7,6 @@ function parseAny(digit){
   return unicode - 55;
 }
 
-function binaryToDecimal(binary){
-  return anyBaseToDecimal(binary, 2)
-}
-
- function hexadecimalToDecimal(hexadecimal){
-  return anyBaseToDecimal(hexadecimal,16)
-}
-
 function anyBaseToDecimal(anybase,base){
  return anybase.split("").reverse().reduce(function (accumulator,digit,index){
      return accumulator + (parseAny(digit) * Math.pow(base, index));
@@ -23,5 +15,5 @@ function anyBaseToDecimal(anybase,base){
 
 
 $(document).ready(function(){
-    
+    $("binaryform").submit()
 });
