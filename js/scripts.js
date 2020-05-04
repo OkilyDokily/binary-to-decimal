@@ -31,7 +31,7 @@ function parseBinaryDigit(digit){
   return parseInt(digit)
 }
 
-function parseHexadecimalDigit(digit){
+function parseAny(digit){
   if(parseInt(digit)>=0){
     return parseInt(digit)
   }
@@ -58,9 +58,12 @@ function binaryToDecimal(binary){
 
  function hexadecimalToDecimal(hexadecimal){
   return hexadecimal.split("").reverse().reduce(function (accumulator,digit,index){
-     return accumulator + (parseHexadecimalDigit(digit) * Math.pow(16, index));
+     return accumulator + (parseAny(digit) * Math.pow(16, index));
    },0);
 }
+
+
+
 
 $(document).ready(function(){
     console.log(binaryToDecimal("11"));
