@@ -31,6 +31,14 @@ function parseBinaryDigit(digit){
   return parseInt(digit)
 }
 
+function parseHexadecimalDigit(digit){
+  if(parseInt(digit)>=0){
+    return parseInt(digit)
+  }
+  var unicode = digit.toUpperCase().charCodeAt()
+  return unicode - 55;
+}
+
 function convertHighestPlaceToDecimal(binary){
   var highest = binary.split("")[0];
   return parseBinaryDigit(highest) * Math.pow(2,binary.length-1);
